@@ -11,7 +11,7 @@
 -- @release $Id$
 local CallbackHandler = LibStub("CallbackHandler-1.0")
 
-local MAJOR, MINOR = "AceConfigRegistry-3.0", 20
+local MAJOR, MINOR = "AceConfigRegistry-3.0", 1020
 local AceConfigRegistry = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not AceConfigRegistry then return end
@@ -72,6 +72,7 @@ local basekeys={
 	type=isstring,
 	name=isstringfunc,
 	desc=optstringfunc,
+	itemLink=optstring,
 	descStyle=optstring,
 	order=optmethodnumber,
 	validate=optmethodfalse,
